@@ -1,0 +1,58 @@
+Terminal Setup Backup
+=====================
+
+terminal-setup/
+│
+├── README.md                          # Main documentation
+├── BACKUP_INFO.md                     # Backup details & recovery
+├── STRUCTURE.txt                      # This file
+│
+├── config/                            # All configuration files
+│   ├── windows-terminal-settings.json # Windows Terminal config
+│   ├── starship.toml                  # Starship prompt config
+│   │
+│   ├── nushell/                       # Nushell configurations
+│   │   ├── config.nu                  # Main config
+│   │   ├── env.nu                     # Environment setup
+│   │   └── catppuccin_mocha.nu        # Theme file
+│   │
+│   └── shell-profiles/                # Shell profile files
+│       ├── bashrc                     # Bash config
+│       ├── WindowsPowerShell-profile.ps1
+│       └── PowerShell-profile.ps1
+│
+├── scripts/                           # Installation scripts
+│   ├── install.ps1                    # Windows installer
+│   └── install-linux.sh               # Linux/WSL installer
+│
+└── docs/                              # Documentation
+    ├── QUICK_START.md                 # 5-minute setup guide
+    └── CONFIGURATION.md               # Customization guide
+
+PROFILES CONFIGURED
+===================
+✓ Windows PowerShell    (Catppuccin Mocha, 60% opacity)
+✓ PowerShell Core       (Catppuccin Mocha, 60% opacity)
+✓ Command Prompt        (Catppuccin Mocha, 60% opacity, Clink)
+✓ Ubuntu/Bash           (Starship + Carapace)
+✓ Nushell              (Catppuccin Mocha, 60% opacity)
+✓ Claude Code          (Catppuccin Mocha, 85% opacity)
+
+TOOLS INCLUDED
+==============
+✓ JetBrains Mono Nerd Font v3.1.1
+✓ Starship v1.24.1 (Catppuccin Powerline preset)
+✓ Carapace v1.5.5 (completions)
+✓ Nushell v0.108.0
+✓ Clink v1.9.2
+
+THEME
+=====
+Primary: Catppuccin Mocha (dark pastel)
+Variants available: Mocha, Frappe, Macchiato, Latte
+
+QUICK COMMANDS
+==============
+Windows Install:   powershell -ExecutionPolicy Bypass -File scripts\install.ps1
+Linux Install:     ./scripts/install-linux.sh
+View Docs:         cat README.md | less
